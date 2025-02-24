@@ -1,0 +1,111 @@
+body{
+    background-color: #0A192F;
+    min-height: 100vh;
+
+}
+.tout{
+    max-width: 90%;
+    margin: 0 auto;
+}
+header{
+    position: relative;
+    margin-top: 0;
+}
+.tete {
+    display: flex;
+    position: relative;
+    width: 1O0%;
+    justify-content: space-between;
+    align-items: center
+    position:relative;
+    background-color: rgb(255,111,0) ;
+    margin-top: 0;
+    height: 100px;
+    align-items: center;
+    padding: 5px;
+
+
+    }
+.tete p{
+    margin-right:200px;
+    margin-left: 0;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 20px;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.menu{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    background: #0A192F ;
+    border-radius: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.logo{
+
+}
+
+.home {
+    height: 25px;
+    margin-right: 5px;
+}
+.service{
+    
+    height: 25px;
+    margin-right: 5px;
+}
+.contact {
+    
+    height: 25px;
+    margin-right: 5px;
+}
+nav{
+    display: flex;
+}
+
+
+h1 ,h2, p {
+    color : white;
+    
+}
+ul{
+    color : white;
+}
+img {
+    height: 10vh;
+    border: white solid 2px;
+    border-radius: 40px;
+    margin: O;
+}
+h1{
+    text-align: center;
+    font-family:serif;
+    font-weight: 1000;
+    font-size: 2em;
+    margin: 50px 0;
+    border:2px dashed rgba(255, 111, 0, 0.201);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding : 30px;
+    background-color:#33333361 ;
+}
+
+.para{
+    text-align: center;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.separator{
+    height: 2px;
+    background:rgb(255, 111, 0) ;
+    margin: 40px 0;
+}
