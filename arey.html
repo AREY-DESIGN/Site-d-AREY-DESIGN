@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <title>AREY-DESIGN</title>
     <link rel="stylesheet" href="arey.css">
+    
 </head>
 <body>
     <header>
-        <h1>AREY DESIGN - L'Art du Graphisme et du Digital</h1> 
-        <p>AREY DESIGN est une agence spécialisée dans le graphisme, le montage vidéo et l’intelligence artificielle appliquée à la création visuelle. Nous transformons vos idées en designs percutants et en vidéos captivantes pour booster votre image et votre communication.</p>
-        <h2>Nos Services</h2>
-        <ul>
-            <li><strong>Graphisme :</strong> Création d’affiches, logos, flyers et visuels uniques pour marquer les esprits.</li>
-            <li><strong>Montage vidéo :</strong> Réalisation de montages professionnels pour promouvoir votre marque ou vos événements.</li>
-            <li><strong>Formation & IA :</strong>Apprenez à utiliser des outils de création modernes et découvrez la puissance de l’intelligence artificielle pour le design.</li>
-        </ul>
+        <div class="tete">
+            <img src="1.jpg" alt="logo" class="logo">
+            <p>AREY-DESIGN</p> 
+            <nav>
+                <a href="#accueil" class="menu"> <img src="home.png" alt="accueil" class="home"> Accueil</a>
+                <a href="#services" class="menu"> <img src="service.png" alt="service" class="service"> Services</a>
+                <a href="#contact" class="menu"> <img src="contact.png" alt="contact" class="contact"> Contact</a>
+            </nav>
+        </div>
     </header>
+    <div class="tout">
+        <div id="accueil">
+            <h1 id="accueil">AREY DESIGN - L'Art du Graphisme et du Digital</h1>
+            <p class="para">AREY DESIGN est une agence spécialisée dans le graphisme, le montage vidéo et l’intelligence artificielle appliquée à la création visuelle. Nous transformons vos idées en designs percutants et en vidéos captivantes pour booster votre image et votre communication.</p>
+        </div>    
+       <section class="separator"></section>       
+         <div class="milieu" id="services">
+            <h2 >Nos Services</h2>
+            <ul>
+                <li><strong>Graphisme :</strong> Création d’affiches, logos, flyers et visuels uniques pour marquer les esprits.</li>
+                <li><strong>Montage vidéo :</strong> Réalisation de montages professionnels pour promouvoir votre marque ou vos événements.</li>
+                <li><strong>Formation & IA :</strong>Apprenez à utiliser des outils de création modernes et découvrez la puissance de l’intelligence artificielle pour le design.</li>
+            </ul>
+        </div>   
+        <div class="bas">
+            <a class="canva" href="https://www.bing.com/ck/a?!&&p=ae7bcb13e561b388c253a160d4fea7a83b0f7282a2ad204a0ebea9a3f9683981JmltdHM9MTc0MDM1NTIwMA&ptn=3&ver=2&hsh=4&fclid=1d92089d-64c0-6e1b-24d7-1da1655e6f6b&psq=canva&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tL2ZyX2ZyLw&ntb=1"><img src="canva.jpg" alt="canva" class="lien"> lien vers Canva</a>
+        </div>
+        <section class="separator"></section>
+    
+        <section class="apropos">
+            <h2>À Propos</h2>
+            <img src="1.jpg" alt="loge AREY-DESIGN" class="logo2">
+            <p class=ppropos>AREY DESIGN est une agence spécialisée en graphisme, montage vidéo et intelligence artificielle. Nous aidons les entreprises et créateurs à améliorer leur visibilité avec des designs percutants et des solutions innovantes.</p>
+        </section>
+        <section class="separator"></section>
+        <div id="contact">
+            <form action="formulaire php">
+                <h3>Contactez-nous</h3>
+               <p class="formulaire">
+                    <input type="texte" name="nom" placeholder="Entrez votre nom" required>
+                    </br> </br></br>
+                    <input type="texte" name="prenom" placeholder="Entrez votre prénom" required> 
+                    </br> </br>
+                    <textarea name="message" placeholder="Entrez votre message"></textarea>
+                    <br> <br>
+                    <input type="submit" value="Envoyer">
+                </p>
+            </form>
+        </div>
+    </div>
+    
+    
+    
 </body>
 </html>
