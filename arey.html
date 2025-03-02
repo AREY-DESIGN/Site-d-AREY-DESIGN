@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>AREY-DESIGN</title>
     <link rel="stylesheet" href="arey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     
 </head>
 <body>
@@ -11,13 +13,20 @@
         <div class="tete">
             <img src="1.jpg" alt="logo" class="logo">
             <p>AREY-DESIGN</p> 
-            <nav>
+            <div class="cache-icon" onclick="Togglemenu">☰</div>
+            <nav class="cache">
                 <a href="#accueil" class="menu"> <img src="home.png" alt="accueil" class="home"> Accueil</a>
                 <a href="#services" class="menu"> <img src="service.png" alt="service" class="service"> Services</a>
-                <a href="#contact" class="menu"> <img src="contact.png" alt="contact" class="contact"> Contact</a>
+                <a href="#contact" class="menu"> <img src="contact.png" alt="contact" class="contact2"> Contact</a>
             </nav>
         </div>
     </header>
+    <script>
+        function Togglemenu(){
+            const menu = document.querySelector('.cache');
+            menu.classList.toggle('active');
+        }
+    </script>
     <div class="tout">
         <div id="accueil">
             <h1 id="accueil">AREY DESIGN - L'Art du Graphisme et du Digital</h1>
@@ -43,23 +52,38 @@
             <p class=ppropos>AREY DESIGN est une agence spécialisée en graphisme, montage vidéo et intelligence artificielle. Nous aidons les entreprises et créateurs à améliorer leur visibilité avec des designs percutants et des solutions innovantes.</p>
         </section>
         <section class="separator"></section>
-        <div id="contact">
+        <div id="contact" class="contact">
             <form action="formulaire php">
-                <h3>Contactez-nous</h3>
-               <p class="formulaire">
-                    <input type="texte" name="nom" placeholder="Entrez votre nom" required>
-                    </br> </br></br>
-                    <input type="texte" name="prenom" placeholder="Entrez votre prénom" required> 
-                    </br> </br>
-                    <textarea name="message" placeholder="Entrez votre message"></textarea>
-                    <br> <br>
-                    <input type="submit" value="Envoyer">
-                </p>
+                    <h3>Contactez-nous</h3>
+                    <p class="paragraphe">
+                        <input class="nom" type="texte" name="nom" placeholder="Entrez votre nom" required>
+                        </br> </br></br>
+                        <input class="email" type="email" name="prenom" placeholder="Entrez votre email" required> 
+                        </br> </br>
+                         <textarea class="message" name="message" placeholder="Entrez votre message"></textarea>
+                        <br> <br>
+                         <input type="submit" value="Envoyer" class="envoyer">
+                    </p>
             </form>
+            
         </div>
     </div>
-    
-    
-    
+    <footer>
+        <div class="footer">
+            <p>AREY-DESIGN - 2025</p>
+            <div class="fin">
+                <a href="https://wa.me/22898462134" target="_blank" class="whatsapp">
+                    <img src="whatsapp.png" >
+                    WhatsApp
+                </a>
+                <a href="https://www.facebook.com/photo/?fbid=122098672160435043&set=a.122098671572435043" target="_blank" class="facebook">
+                    <img src="facebook.png">
+                    Facebook</a>
+                <a href="https://t.me/+22899741889" target="_blank" class="telegram">
+                    <img src="telegram.png" >Telegram
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
