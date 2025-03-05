@@ -1,0 +1,587 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image:url("ultime.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s ease;
+    position:relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; /* Couleur transparente par défaut */
+    transition: background-color 0.5s ease;
+    z-index: -1; /* Place le calque au-dessus de l'image */
+}
+body:hover::before {
+    background-color: rgba(10, 25, 47, 0.882); /* Couleur semi-transparente au survol */
+}
+.tout{
+    max-width: 90%;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 0;
+}
+header{
+    position: fixed;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.tete {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    background-color: rgb(255,111,0) ;
+    margin-top: 0;
+    height: 100px;
+    align-items: center;
+    padding: 5px;
+    }
+
+.tete p{
+    margin-right:200px;
+    margin-left: 0;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 20px;
+    color:rgb(255, 255, 255);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.sidebar{
+    position:fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:300px;
+    background-color: #ffffff00;
+    backdrop-filter: blur(15px);
+    display: none;
+    z-index: 999   ;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+    
+}
+
+
+.cache2{
+    display:flex ;
+    flex-direction:column ;
+    height:100vh;
+    justify-content: center;
+    justify-content: flex-start;
+
+}
+
+.sidebar a{
+    width: 90%;
+    padding: 10px;
+    margin: 15px;
+}
+.menu-icon {
+    height: 30px; /* Hauteur de l'icône */
+    width: 30px; /* Largeur de l'icône */
+    display: none; /* Masque l'icône du menu */
+    align-items: center; /* Centre l'icône verticalement */
+    justify-content: center; /* Centre l'icône horizontalement */
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Pas de bordure */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de marge */
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer; /* Change le curseur en pointeur */
+}
+
+.menu-icon img {
+    height: 100%; /* L'image prend toute la hauteur du conteneur */
+    width: auto; /* Largeur automatique pour conserver les proportions */
+    border: none; /* Pas de bordure */
+    border-radius: 0px ; /*eviter bordure arrondie */
+    box-shadow: none; /* Pas d'ombre */
+}
+
+.menu{
+    text-decoration: none;
+    color:rgb(255, 255, 255); 
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    background: #0A192F ;
+    border-radius: 20px;
+    height: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+.menu:hover{
+    background-color: #333333;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 111, 0);
+    box-shadow: -1px -1px 16px 4px white;
+    filter: brightness(1);
+}
+
+.logo {
+
+}
+
+.home {
+    height: 25px;
+    margin-right: 5px;
+}
+.service{
+    
+    height: 25px;
+    margin-right: 5px;
+}
+.contact2{
+    
+    height: 25px;
+    margin-right: 5px;
+}
+nav{
+    display: flex;
+}
+
+
+h1 ,h2, p {
+    color : white;
+    
+}
+ul{
+    color : white;
+}
+img {
+    height: 10vh;
+    border: white solid 2px;
+    border-radius: 40px;
+    margin: O;
+}
+h1{
+    text-align: center;
+    font-family:serif;
+    font-weight: 1000;
+    font-size: 3em;
+    margin: 150px 50px 0;
+    border:2px dashed rgba(255, 111, 0, 0.452) ;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding : 30px;
+    background-color:#33333361 ;
+    transition: 0.3s;
+}
+h1:hover{
+    background-color:#33333361 ;
+    color: rgb(255, 111, 0) ;
+    border:2px dashed rgba(255, 111, 0, 0.985) ;
+    box-shadow: -1px -1px 16px 4px white;
+    filter: brightness(1);
+
+}
+
+.para{
+    text-align: center;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 50px;
+
+}
+
+.separator{
+    height: 2px;
+    background:rgb(255, 111, 0) ;
+    margin: 40px 0 0 0;
+   
+}
+.milieu{
+    min-height 100px;
+
+}
+ul{
+    display: flex;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color:#333333 ;
+    border: 2px solid rgb(255, 111, 0) ;
+    padding: 20px;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px -1px 16px 4px white;
+    transition: 0.3s;
+}
+
+ul :hover{
+    background-color: #333333;
+    color:  rgb(255, 255, 255);
+    border: 4px solid  rgb(255, 111, 0);
+    filter: brightness(1);
+    box-shadow: -1px -1px 16px 4px white;
+
+}
+
+li{
+    margin: 0 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    background-color:rgb(255, 111, 0);
+    color: white;
+    min-height: 100px;
+    transition:0.2s;
+}
+li:hover{
+    background-color:  rgb(0, 0, 0);
+    color:  rgb(255, 255, 255);
+    border: 3px solid  rgb(255, 111, 0);
+    filter: brightness(1);
+    filter: brightness(1.2);
+}
+
+h2{
+    text-align: center;
+    font-family:serif;
+    font-weight: 1000;
+    font-size: 2em;
+    margin: 30px 0;
+}
+.canva {
+    text-decoration: none;
+    color: white;
+    background-color: #333333;
+    margin-top: 30px ;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 10px;
+    border:rgb(255, 111, 0) 2px solid;
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;  
+    height: 50px;
+    margin: 10px;
+    transition:0.3s;
+}
+.canva :hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    background:rgb(255, 111, 0);
+    color: white;
+}
+.lien{
+    height:40px;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    background:rgb(255, 111, 0);
+    color: white;
+}
+.bas{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around
+}
+.logo2{
+    display: flex;
+    height: 40vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 160px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    transition: transform 0.2s ease-in-out;
+}
+.logo2:hover{
+    transform: scale(1.1);
+
+}
+.ppropos{
+    text-align: center;
+    justify-content: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.apropos{
+    margin: 50px 0;
+    border:2px dashed rgba(255, 111, 0, 0.201);
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding : 30px;
+    background-color:#33333361 ;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lien{
+    margin-right: 30px;
+}
+
+.contact h3{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.nom, .email{
+    
+   width: 150%; 
+   border-radius: 25px;
+   padding: 10px;
+   color: rgb(255, 255, 255);
+   background-color: #333333;
+   border: 1px solid rgb(255, 111, 0);
+   margin: 0  auto;
+    
+}
+.paragraphe{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-right: 130px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: center
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    clear: both;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact form{
+    max-width: 90%;
+    padding: 20px;
+    background: #333333;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 111, 0);
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition:1.5s;
+
+
+}
+.contact form:hover{
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    background-image: url("ultime.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1);
+   
+}
+.message{
+    display: flex;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 150px;
+    color: rgb(11, 0, 0);
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(255, 111, 0);
+    resize: none;
+}
+
+.envoyer {
+    border-radius: 30px;
+    width: 90%;
+    min-height: 35px;
+    padding: 10px;
+    background-color: rgb(255, 111, 0); 
+    color: white;
+    border:2px solid;
+    }
+.envoyer:hover{
+    background-color: #ffffff;
+    color: black;   
+    border: 3px solid  rgb(255, 111, 0);
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+.formulaire {
+    display:flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 111, 0);
+    border-radius: 20px;
+}
+.footer p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 20px;
+}
+.footer p:hover{
+    color :#333333;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+.fin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+footer {
+    background-color: rgb(255, 111, 0); /* Ajuste selon ton design */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Empêche les débordements */
+    margin : 0;
+    margin-bottom: auto;
+}
+.fin {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Empêche les débordements sur petits écrans */
+    gap: 15px; /* Espacement entre les icônes */
+}
+
+.fin a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.136);
+    transition: 0.3s;
+}
+
+.fin a:hover {
+    background-color: rgb(255, 255, 255);
+    filter: brightness(1.5); /* Effet lumineux sur l'icône */
+    transition: filter 1s ease; /* Transition sur l'icône */
+    color:black
+    
+    
+}
+
+.fin img {
+    width: 50px; /* Ajuste la taille des icônes */
+    height: 50px;
+    margin-right: 8px;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+
+    .cache {
+        display: none; /* Masquer le menu principal sur mobile */
+    }
+
+    .sidebar {
+        width: 50%; /* La barre latérale prend toute la largeur sur mobile */
+    }
+    .sidebar a:first-child img{
+        margin-bottom: 10px;
+        border-radius: 100px;
+        height: 40px;
+
+    }
+    .tete p {
+        margin-right: 0; /* Ajuster les marges pour le texte du header */
+        margin-left: 90px;
+        font-size: 1em;
+    }
+    .logo {
+        height: 70px; /* Ajuster la taille du logo sur mobile */
+    }
+
+    h1 {
+        font-size: 2em; /* Réduire la taille de la police pour les titres */
+        margin: 100px 20px 0;
+    }
+
+    .para {
+        font-size: 0.9em; /* Réduire la taille de la police pour les paragraphes */
+    }
+
+    .paragraphe {
+        margin-right: 0; /* Ajuster les marges pour les paragraphes */
+        flex-direction: column;
+        align-items: center; 
+    }
+    ul {
+        flex-direction: column; /* Afficher les éléments de la liste en colonne */
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0; /* Ajuster les marges des éléments de la liste */
+    }
+
+    .bas {
+        margin-left: 0; /* Centrer le lien Canva sur mobile */
+        justify-content: center;
+    }
+
+    .logo2 {
+        height: 30vh; /* Réduire la taille du logo sur mobile */
+    }
+
+    .contact form {
+        width: 100%; /* Le formulaire prend toute la largeur sur mobile */
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nom, .email, .message {
+        width: 100%; /* Les champs du formulaire prennent toute la largeur */
+        margin-left: 0; /* Ajuster les marges pour les champs du formulaire */
+    }
+    .menu-icon {
+        display: flex; /* Afficher l'icône du menu */
+       
+    }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>AREY-DESIGN</title>
+    <link rel="stylesheet" href="arey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    
+</head>
+<body>
+    <header>
+        <div class="sidebar">
+            
+            <nav class="cache2">
+                <a href="#" onclick="hidesidebar(event)"><img src="proche.png"></a>
+                <a href="#accueil" class="menu"> <img src="home.png" alt="accueil" class="home"> Accueil</a>
+                <a href="#services" class="menu"> <img src="service.png" alt="service" class="service"> Services</a>
+                <a href="#contact" class="menu"> <img src="contact.png" alt="contact" class="contact2"> Contact</a>
+            </nav>
+        </div>
+        <div class="tete">
+            <img src="1.jpg" alt="logo" class="logo">
+            <p>AREY-DESIGN</p> 
+            <nav class="cache">
+                <a href="#accueil" class="menu"> <img src="home.png" alt="accueil" class="home"> Accueil</a>
+                <a href="#services" class="menu"> <img src="service.png" alt="service" class="service"> Services</a>
+                <a href="#contact" class="menu"> <img src="contact.png" alt="contact" class="contact2"> Contact</a>
+            </nav>
+            <a onclick="showsidebar()" class="menu-icon"> <img src="menu.png" alt="menu"></a>
+            <script>
+                function showsidebar(){
+
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'flex';
+                }
+                    function hidesidebar(){
+                    event.preventDefault();
+                    event.stopPropagation();
+                    const sidebar = document.querySelector('.sidebar');
+                    sidebar.style.display = 'none';
+                    
+                }
+                document.addEventListener('click', function(event) {
+        const sidebar = document.querySelector('.sidebar');
+        const menuIcon = document.querySelector('.menu-icon');
+
+        // Vérifier si le clic est en dehors de la barre latérale et n'est pas sur l'icône du menu
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidebar.style.display = 'none';
+        }
+    });
+
+            </script>
+        </div>
+    </header>
+    
+    <div class="tout">
+        <div id="accueil">
+            <h1 id="accueil">AREY DESIGN - L'Art du Graphisme et du Digital</h1>
+            <p class="para">AREY DESIGN est une agence spécialisée dans le graphisme, le montage vidéo et l’intelligence artificielle appliquée à la création visuelle. Nous transformons vos idées en designs percutants et en vidéos captivantes pour booster votre image et votre communication.</p>
+        </div>    
+       <section class="separator"></section>       
+         <div class="milieu" id="services">
+            <h2 >Nos Services</h2>
+            <ul>
+                <li><strong>Graphisme :</strong> Création d’affiches, logos, flyers et visuels uniques pour marquer les esprits.</li>
+                <li><strong>Montage vidéo :</strong> Réalisation de montages professionnels pour promouvoir votre marque ou vos événements.</li>
+                <li><strong>Formation & IA :</strong>Apprenez à utiliser des outils de création modernes et découvrez la puissance de l’intelligence artificielle pour le design.</li>
+            </ul>
+        </div>   
+        <div class="bas">
+            <a class="canva" href="https://www.bing.com/ck/a?!&&p=ae7bcb13e561b388c253a160d4fea7a83b0f7282a2ad204a0ebea9a3f9683981JmltdHM9MTc0MDM1NTIwMA&ptn=3&ver=2&hsh=4&fclid=1d92089d-64c0-6e1b-24d7-1da1655e6f6b&psq=canva&u=a1aHR0cHM6Ly93d3cuY2FudmEuY29tL2ZyX2ZyLw&ntb=1"><img src="canva.jpg" alt="canva" class="lien"> lien vers Canva</a>
+        </div>
+        <section class="separator"></section>
+    
+        <section class="apropos">
+            <h2>À Propos</h2>
+            <img src="1.jpg" alt="loge AREY-DESIGN" class="logo2">
+            <p class=ppropos>AREY DESIGN est une agence spécialisée en graphisme, montage vidéo et intelligence artificielle. Nous aidons les entreprises et créateurs à améliorer leur visibilité avec des designs percutants et des solutions innovantes.</p>
+        </section>
+        <section class="separator"></section>
+        <div id="contact" class="contact">
+            <form action="#">
+                    <h3>Contactez-nous</h3>
+                    <p class="paragraphe">
+                        <input class="nom" type="texte" name="nom" placeholder="Entrez votre nom" required>
+                        </br> </br></br>
+                        <input class="email" type="email" name="prenom" placeholder="Entrez votre email" required> 
+                        </br> </br>
+                         <textarea class="message" name="message" placeholder="Entrez votre message"></textarea>
+                        <br> <br>
+                         <input type="submit" value="Envoyer" class="envoyer">
+                    </p>
+            </form>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <p>AREY-DESIGN - 2025</p>
+            <div class="fin">
+                <a href="https://wa.me/22898462134" target="_blank" class="whatsapp">
+                    <img src="whatsapp.png" >
+                    WhatsApp
+                </a>
+                <a href="https://www.facebook.com/photo/?fbid=122098672160435043&set=a.122098671572435043" target="_blank" class="facebook">
+                    <img src="facebook.png">
+                    Facebook</a>
+                <a href="https://t.me/+22899741889" target="_blank" class="telegram">
+                    <img src="telegram.png" >Telegram
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
